@@ -1,0 +1,11 @@
+scenario_id,scenario,category,expected_result
+S01,Lote normal de clientes,Normal,Evaluar y priorizar el 15 %
+S02,Cliente con contrato mensual,Normal,Evaluar sin error
+S03,Cliente con contrato de dos años,Normal,Evaluar sin error
+S04,Cliente nuevo con antigüedad cero,Borde,Evaluar si las características restantes son válidas
+S05,Lote con una característica faltante,Borde,Procesar si el modelo puede imputarla
+S06,Lote vacío,Fallo esperado,Rechazar la entrada
+S07,Columna obligatoria ausente,Fallo esperado,Rechazar la entrada
+S08,Identificadores duplicados,Fallo esperado,Rechazar la entrada
+S09,Puntuación de riesgo fuera de rango,Fallo esperado,Rechazar los resultados
+S10,Fracción de selección inválida,Fallo esperado,Rechazar la configuración
