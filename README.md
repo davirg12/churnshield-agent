@@ -63,7 +63,7 @@ El resultado no alcanza el objetivo predefinido del 75 %. Además, el conjunto d
 Clona el repositorio e instala las dependencias:
 
 ```bash
-git clone https://github.com/MauroPrasca29/churnshield-agent.git
+git clone https://github.com/davirg12/churnshield-agent.git
 cd churnshield-agent
 python -m venv .venv
 python -m pip install -r requirements.txt
