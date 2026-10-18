@@ -12,6 +12,13 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
 # Import modules of the agent
+import sys
+from pathlib import Path
+# Add current directory and nested repo directory to sys.path to ensure 'app' is always found
+sys.path.insert(0, str(Path(__file__).parent.resolve()))
+if (Path(__file__).parent / 'churnshield-agent-main').exists():
+    sys.path.insert(0, str((Path(__file__).parent / 'churnshield-agent-main').resolve()))
+
 from app.perception import perceive
 from app.decision import decide
 from app.actions import generate_retention_actions
@@ -30,8 +37,9 @@ st.set_page_config(
 def load_data_and_train_model():
     data_path = Path("data/raw/Telco-Customer-Churn.csv")
     if not data_path.exists():
-        # Fallback local path if running from root
         data_path = Path(__file__).parent / "data" / "raw" / "Telco-Customer-Churn.csv"
+    if not data_path.exists():
+        data_path = Path(__file__).parent / "churnshield-agent-main" / "data" / "raw" / "Telco-Customer-Churn.csv"
     
     df = pd.read_csv(data_path)
     df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce').fillna(0.0)
