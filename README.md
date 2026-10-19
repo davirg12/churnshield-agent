@@ -101,3 +101,13 @@ La última ejecución registró 14 pruebas pasadas.
 ## 10. Estado del prototipo
 
 El proyecto incluye los componentes del agente, datos preparados, evaluaciones y pruebas automatizadas. Las acciones son simuladas. La precisión objetivo del 75 % y el horizonte de 30 días siguen pendientes de validación satisfactoria.
+
+## 11. Entregables y Documentación de Evaluación
+
+Para facilitar la revisión por parte del docente (al requerir la plataforma institucional un único PDF principal de entrega), los entregables complementarios y recursos de prueba se encuentran versionados y disponibles directamente en este repositorio:
+
+* 🌐 **Plataforma de Despliegue en Vivo (Opción A):** [https://churnshield-agent-tgxvqnkandvugexvdjp25w.streamlit.app/](https://churnshield-agent-tgxvqnkandvugexvdjp25w.streamlit.app/)
+* 📑 **Bitácora de Uso de Inteligencia Artificial (IA):** [`docs/Bitacora_Uso_IA_CHURNSHIELD.pdf`](docs/Bitacora_Uso_IA_CHURNSHIELD.pdf)
+* 📖 **Guía de Uso de la Plataforma y Casos de Prueba:** [`docs/GUIA_DE_USO_Y_PRUEBAS_CHURNSHIELD.pdf`](docs/GUIA_DE_USO_Y_PRUEBAS_CHURNSHIELD.pdf)
+* 🗜️ **Paquete Consolidado de Logs y Reportes de Auditoría:** [`docs/CHURNSHIELD_AGENT_Logs_Pruebas.zip`](docs/CHURNSHIELD_AGENT_Logs_Pruebas.zip)
+* 📊 **Datasets Extras para Prueba de Evaluación:** [`docs/DATOS_DE_PRUEBA_CHURNSHIELD_EXTRA.zip`](docs/DATOS_DE_PRUEBA_CHURNSHIELD_EXTRA.zip) (contiene 5 conjuntos de prueba en formato `.csv`: lotes típicos, clientes de alto y bajo riesgo, casos de borde y pruebas de resiliencia ante esquemas rotos para cargar en la demo web).
